@@ -1,0 +1,5 @@
+menu (fixed left)
+main page
+about me (using grid)
+My work (grid)
+How to reach me (contacts)

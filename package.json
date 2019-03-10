@@ -1,0 +1,19 @@
+{
+  "name": "portfolio_page",
+  "version": "1.0.0",
+  "description": "Responsive portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikSkopin/portfolio_page.git"
+  },
+  "author": "Nikita Skopin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NikSkopin/portfolio_page/issues"
+  },
+  "homepage": "https://github.com/NikSkopin/portfolio_page#readme"
+}
