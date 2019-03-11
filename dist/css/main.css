@@ -5,25 +5,60 @@ body {
   background-color: #fffafa;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-family: "Segoe UI", Tahoma, sans-serif;
   line-height: 1.5; }
 
 h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 4rem; }
+    font-size: 4rem;
+    color: #fffafa; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    color: #fffafa; }
 
 a {
   text-decoration: none; }
+
+.section-wrapper {
+  height: 100vh;
+  position: relative; }
+
+.container {
+  position: absolute;
+  top: 2.5%;
+  margin-left: 35%;
+  width: 65%;
+  height: 95%;
+  background-color: #444444;
+  padding: 4rem;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -4px 6px 8px 0px #444444;
+  z-index: 0; }
+  .container #overlay {
+    position: absolute;
+    /* Sit on top of the page content */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(68, 68, 68, 0.7);
+    /* Black background with opacity */
+    border-radius: 10px 0 0 10px;
+    z-index: -1;
+    /* Specify a stack order in case you're using a different order for other elements */ }
 
 nav {
   position: fixed;
   height: 100vh;
   width: 35%;
-  min-width: 150px; }
+  min-width: 150px;
+  z-index: 2; }
 
 .menu-nav {
   position: absolute;
@@ -42,14 +77,27 @@ nav {
   text-transform: uppercase;
   font-size: 3rem; }
 
-.section-wrapper {
-  height: 100vh;
-  position: relative; }
+.nav-link {
+  color: #444444; }
+  .nav-link:hover {
+    font-weight: 700;
+    color: #FF8000;
+    transition: all 0.3s ease-out; }
 
-.container {
-  position: absolute;
-  top: 2.5%;
-  margin-left: 35%;
-  width: 65%;
-  height: 95%;
-  background-color: #444; }
+main .icons a {
+  color: #fffafa;
+  padding: 0.4rem; }
+  main .icons a:hover {
+    color: #FF8000;
+    transition: all 0.3s ease-out; }
+
+main#home h1 {
+  margin-top: 20vh; }
+
+main#home .container {
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover; }
+
+.text-secondary {
+  color: #FF8000; }
