@@ -1,21 +1,4 @@
-//fonts and colors
-$primary-color: #fffafa;
-$secondary-color: #444444;
-$accent-color: #FF8000; //in case I want span around Skopin
-$primary-font: 'Segoe UI', Tahoma, sans-serif;
-
-//images
-$home-image: url(../img/background.jpg);
-$background-opacity: 0.7;
-
-@mixin easeOut {
-    transition: all 0.3s ease-out;
-}
-
-@mixin background {
-    background-attachment: fixed;
-    background-size: cover;
-}
+@import 'config';
 
 * {
     box-sizing: border-box;
@@ -27,6 +10,10 @@ body {
     margin: 0;
     font-family: $primary-font;
     line-height: 1.5;
+
+    // //smooth scroll, doesn't work in some browsers
+    // overflow-y: scroll;
+    // scroll-behavior: smooth;
 }
 
 //Headings
@@ -65,24 +52,21 @@ a {
     border-radius: 10px 0 0 10px;
     box-shadow: -4px 6px 8px 0px rgba($secondary-color,1);
     z-index: 0;
-    // border: 1px solid red;
 
-    #overlay {
-        position: absolute; /* Sit on top of the page content */
-        width: 100%; /* Full width (cover the whole page) */
-        height: 100%; /* Full height (cover the whole page) */
+    &:after {
+        content: '';
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba($secondary-color,$background-opacity); /* Black background with opacity */
+        background-color: rgba($secondary-color,$background-opacity);
         border-radius: 10px 0 0 10px;
-        z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
-        // cursor: pointer; /* Add a pointer on hover */
+        z-index: -1;
       }
 }
-
-
 
 nav {
     position: fixed;
@@ -152,5 +136,24 @@ main {
     color: $accent-color;
 }
 
+#about {
+    .container {
+        background-image: $about-image;
+        @include background;
+    }
+}
 
+#work {
+    .container {
+        background-image: $work-image;
+        @include background;
+    }
+}
+
+#contact {
+    .container {
+        background-image: $contact-image;
+        @include background;
+    }
+}
 

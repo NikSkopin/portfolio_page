@@ -3,3 +3,7 @@ main page
 about me (using grid)
 My work (grid)
 How to reach me (contacts)
+
+
+
+used: html5, css3, flex, sass, jquery, 

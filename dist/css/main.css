@@ -36,22 +36,18 @@ a {
   border-radius: 10px 0 0 10px;
   box-shadow: -4px 6px 8px 0px #444444;
   z-index: 0; }
-  .container #overlay {
+  .container:after {
+    content: '';
     position: absolute;
-    /* Sit on top of the page content */
     width: 100%;
-    /* Full width (cover the whole page) */
     height: 100%;
-    /* Full height (cover the whole page) */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(68, 68, 68, 0.7);
-    /* Black background with opacity */
     border-radius: 10px 0 0 10px;
-    z-index: -1;
-    /* Specify a stack order in case you're using a different order for other elements */ }
+    z-index: -1; }
 
 nav {
   position: fixed;
@@ -101,3 +97,18 @@ main#home .container {
 
 .text-secondary {
   color: #FF8000; }
+
+#about .container {
+  background-image: url(../img/bg_1.jpg);
+  background-attachment: fixed;
+  background-size: cover; }
+
+#work .container {
+  background-image: url(../img/bg_3.jpg);
+  background-attachment: fixed;
+  background-size: cover; }
+
+#contact .container {
+  background-image: url(../img/bg_6.jpg);
+  background-attachment: fixed;
+  background-size: cover; }
