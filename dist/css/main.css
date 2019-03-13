@@ -12,30 +12,30 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fffafa; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: #fffafa; }
+  h1.section-sm-heading, h2.section-sm-heading, h3.section-sm-heading {
+    color: #FF8000; }
 
 a {
   text-decoration: none; }
 
+.paragraph {
+  color: #fffafa;
+  text-align: justify; }
+
 .section-wrapper {
-  height: 100vh;
-  position: relative; }
+  height: 100vh; }
 
 .container {
   position: absolute;
-  top: 2.5%;
-  margin-left: 35%;
-  width: 65%;
-  height: 95%;
-  background-color: #444444;
-  padding: 4rem;
-  border-radius: 10px 0 0 10px;
-  box-shadow: -4px 6px 8px 0px #444444;
-  z-index: 0; }
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  z-index: 1; }
   .container:after {
     content: '';
     position: absolute;
@@ -46,54 +46,52 @@ a {
     right: 0;
     bottom: 0;
     background-color: rgba(68, 68, 68, 0.7);
-    border-radius: 10px 0 0 10px;
     z-index: -1; }
 
 nav {
-  position: fixed;
-  height: 100vh;
-  width: 35%;
-  min-width: 150px;
-  z-index: 2; }
+  position: relative;
+  width: 100%;
+  padding: 0.8rem; }
+  nav:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(68, 68, 68, 0.7);
+    z-index: 0; }
 
 .menu-nav {
-  position: absolute;
-  top: 30%;
-  list-style-type: none;
-  height: 40%;
+  list-style: none;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   justify-content: space-between;
   text-align: center; }
 
 .nav-item {
   text-transform: uppercase;
-  font-size: 3rem; }
+  font-size: 0.85rem;
+  z-index: 1; }
 
 .nav-link {
-  color: #444444; }
-  .nav-link:hover {
-    font-weight: 700;
-    color: #FF8000;
-    transition: all 0.3s ease-out; }
+  color: #fffafa; }
 
 main .icons a {
   color: #fffafa;
   padding: 0.4rem; }
-  main .icons a:hover {
-    color: #FF8000;
-    transition: all 0.3s ease-out; }
 
-main#home h1 {
-  margin-top: 20vh; }
-
-main#home .container {
+main#home {
   background-image: url(../img/background.jpg);
-  background-attachment: fixed;
-  background-size: cover; }
+  z-index: 1; }
+  main#home h1 {
+    margin-top: 20vh; }
 
 .text-secondary {
   color: #FF8000; }
@@ -112,3 +110,66 @@ main#home .container {
   background-image: url(../img/bg_6.jpg);
   background-attachment: fixed;
   background-size: cover; }
+
+@media screen and (min-width: 501px) and (max-width: 968px) {
+  nav .menu-nav {
+    width: 75%;
+    margin: 0 auto; }
+  nav .nav-item {
+    font-size: 1.2rem; }
+  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+    font-size: 4rem; }
+  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    margin-bottom: 4rem; }
+  .container {
+    padding: 4rem; } }
+
+@media screen and (min-width: 969px) and (max-width: 1170px) {
+  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+    font-size: 4rem; }
+  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    margin-bottom: 4rem; }
+  .section-wrapper {
+    position: relative; }
+  .container {
+    top: 2.5%;
+    margin-left: 40%;
+    width: 60%;
+    height: 95%;
+    padding: 4rem;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -4px 6px 8px 0px #444444; }
+    .container:after {
+      border-radius: 10px 0 0 10px; }
+  nav {
+    position: fixed;
+    height: 100vh;
+    width: 40%;
+    padding: 0;
+    z-index: 2; }
+    nav:after {
+      display: none; }
+  .menu-nav {
+    position: absolute;
+    top: 30%;
+    height: 40%;
+    padding: 0;
+    flex-flow: column;
+    justify-content: center; }
+  .nav-item {
+    font-size: 2.7rem; }
+  .nav-link {
+    color: #444444; }
+    .nav-link:hover {
+      font-weight: 700;
+      color: #FF8000;
+      transition: all 0.3s ease-out; }
+  main .icons a:hover {
+    color: #FF8000;
+    transition: all 0.3s ease-out; }
+  main#home {
+    background-image: none; }
+    main#home .container {
+      background-image: url(../img/background.jpg);
+      background-attachment: fixed;
+      background-size: cover; } }

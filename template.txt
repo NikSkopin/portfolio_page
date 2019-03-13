@@ -7,3 +7,8 @@ How to reach me (contacts)
 
 
 used: html5, css3, flex, sass, jquery, 
+
+
+todo
+
+обводка вокруг ссылок outline:none

@@ -1,0 +1,129 @@
+//Tablets & Small Laptops
+@include mediaMd {
+    nav {
+
+        .menu-nav {
+            width: 75%;
+            margin: 0 auto;    
+        }
+    
+        .nav-item {
+            font-size: 1.2rem;
+        }
+    }
+
+    h1, h2, h3 {
+        &.lg-heading {
+            font-size: 4rem;
+        }
+        &.sm-heading {
+            margin-bottom: 4rem;
+        }
+    }
+
+    .container {
+        padding: 4rem;
+    }
+    
+}
+
+//Desctops & Laptops
+@include mediaLg {
+    h1, h2, h3 {
+        &.lg-heading {
+            font-size: 4rem;
+        }
+        &.sm-heading {
+            margin-bottom: 4rem;
+        }
+    }
+
+    .section-wrapper {
+        position: relative;
+    }
+
+    .container {
+        top: 2.5%;
+        margin-left: 40%;
+        width: 60%;
+        height: 95%;
+        padding: 4rem;
+        border-radius: 10px 0 0 10px;
+        box-shadow: -4px 6px 8px 0px rgba($secondary-color,1);
+
+        &:after {
+            border-radius: 10px 0 0 10px;
+        }
+    }
+
+    nav {
+        position: fixed;
+        height: 100vh;
+        width: 40%;
+        // min-width: 400px;
+        padding: 0;
+        z-index: 2;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .menu-nav {
+        position: absolute;
+        top: 30%;
+        height: 40%;
+        padding: 0;
+        flex-flow: column;
+        justify-content: center;    
+    }
+
+    .nav-item {
+        font-size: 2.7rem;
+    }
+
+    .nav-link {
+        color: $secondary-color;
+        &:hover {
+            font-weight: 700;
+            color: $accent-color;
+            @include easeOut;
+        }
+    }
+
+    main {
+        .icons {
+            a {
+
+                &:hover {
+                    color: $accent-color;
+                    @include easeOut;
+                }
+            }
+        }
+    
+        &#home {
+            background-image: none;
+
+            .container {
+                background-image: $home-image;
+                @include background;
+            }
+    
+        }
+    
+    }
+    
+
+
+}
+
+//Widescreens
+@include mediaXL {
+
+}
+
+//Smartphones
+// @include mediaSm {
+    
+// }
