@@ -1,5 +1,5 @@
 @import 'config';
-
+@import 'work';
 
 * {
     box-sizing: border-box;
@@ -35,6 +35,7 @@ h1, h2, h3 {
 
 a {
     text-decoration: none;
+    outline: none;
 }
 
 .paragraph {
@@ -51,8 +52,12 @@ a {
     
 }
 
+.section-wrapper-work {
+    min-height: 100vh;
+}
+
 .container {
-    position: absolute;
+    position: relative;
     // position: relative;
     // top: 2.5%;
     // margin-left: 35%;

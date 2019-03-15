@@ -24,6 +24,10 @@
     .container {
         padding: 4rem;
     }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
     
 }
 
@@ -114,16 +118,19 @@
     
     }
     
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
+    .item {
+        max-width: 300px;
+    }
 
 }
 
-//Widescreens
-@include mediaXL {
-
-}
-
-//Smartphones
-// @include mediaSm {
-    
+//Widescreens 
+// @include mediaXL {
+//     .projects {
+//         grid-template-columns: repeat(4, 1fr);
+//     }
 // }
