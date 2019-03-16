@@ -1,18 +1,32 @@
 .projects {
-    display: grid;
-    grid-gap: 0.7rem;
-    grid-template-columns: 1fr;
-    
-    img {
-        width: 100%;
-        border: 3px #fff solid;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: space-between;
 
-        &:hover {
-            opacity: 0.5;
-            border-color: $accent-color;
-            @include easeOut;
+    img {
+        width: 80%;
+        border: 3px #fff solid;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+
+    }
+
+    &-name {
+        display: none;
+    }
+
+    &-details {
+        &-description {
+            color: $primary-color;
+            margin: 0;
         }
     }
+
+    &-preview-techs {
+        display: none;
+    }
+
 }
 
 
@@ -20,24 +34,22 @@
 .btn {
     display: block;
     padding: 0.5rem 1rem;
-    border: 0;
-    margin-bottom: 0.3rem;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
 
-    &:hover {
-        background: $accent-color;
-        color: $primary-color;
-
-    }
 }
 
 .btn-dark {
     @extend .btn;
     background: darken($secondary-color, 50);
     color: $primary-color;
+    margin-bottom: 3rem;
 }
 
 .btn-light {
     @extend .btn;
     background: lighten($secondary-color, 50);
     color: $secondary-color;
+    margin-bottom: 0.3rem;
 }

@@ -11,4 +11,5 @@ used: html5, css3, flex, sass, jquery,
 
 todo
 
-обводка вокруг ссылок outline:none
+++обводка вокруг ссылок outline:none
+поменять шрифт h2 для маленьких экранов

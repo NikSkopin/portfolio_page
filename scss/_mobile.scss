@@ -21,17 +21,50 @@
         }
     }
 
+    .section-wrapper{
+        text-align: left;
+    }
+
+    .section-wrapper-work {
+        text-align: left;
+    }
+
     .container {
         padding: 4rem;
     }
 
     .projects {
-        grid-template-columns: repeat(2, 1fr);
+        flex-flow: row nowrap;
+        margin-bottom: 3rem;
+        width: 90%;
+        margin: 0 auto; 
+        align-items: space-between;
+
+
+        &-preview {
+            flex: 1;
+        }
+
+        &-details {
+            flex: 2;
+        }
+
+        &-name {
+            display: block;
+            margin: 0;
+            color: $primary-color;
+        }
+
+        .btn {
+            width: 12rem;
+        }
     }
+
+
     
 }
 
-//Desctops & Laptops
+//Desktops & Laptops
 @include mediaLg {
     h1, h2, h3 {
         &.lg-heading {
@@ -117,13 +150,85 @@
         }
     
     }
+
+    .section-wrapper{
+        text-align: left;
+    }
+
+    .section-wrapper-work {
+        text-align: left;
+    }
+
     
     .projects {
-        grid-template-columns: repeat(3, 1fr);
+        flex-flow: row nowrap;
+        margin-bottom: 3rem;
+        // width: 90%;
+
+        img {
+            width: 100%;
+
+            &:hover {
+                opacity: 0.6;
+                border-color: $accent-color;
+                @include easeOut;
+            }
+    
+        }
+
+
+        &-preview {
+            flex: 1;
+        }
+
+        &-details {
+            flex: 2;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .btn {
+            width: 7rem;
+            display: inline;
+
+        &:hover {
+            background: $accent-color;
+            color: $primary-color;
+        }
+
+        }
+
+        &-preview-techs {
+            display: block;
+            margin-bottom: 1rem;
+
+            span {
+                display: inline;
+                background-color: darken($accent-color,20);
+                color: $primary-color;
+                opacity: 0.8;
+                padding: 0 0.5rem;
+                border-radius: 6px;
+            }
+        }
     }
 
     .item {
         max-width: 300px;
+    }
+
+    #contact {
+        .icons {
+            a {
+                &:hover {
+                    color: $accent-color;
+                    @include easeOut;
+                }
+            }
+        }
     }
 
 }

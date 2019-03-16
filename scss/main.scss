@@ -47,6 +47,7 @@ a {
 
 .section-wrapper {
     height: 100vh;
+    text-align: center;
     // min-height: 375px;
     // position: relative;
     
@@ -54,6 +55,7 @@ a {
 
 .section-wrapper-work {
     min-height: 100vh;
+    text-align: center;
 }
 
 .container {
@@ -191,6 +193,13 @@ main {
     .container {
         background-image: $contact-image;
         @include background;
+    }
+
+    .icons {
+        a {
+            color: $primary-color;
+            padding: 0.4rem;
+        }
     }
 }
 
