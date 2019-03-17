@@ -1,7 +1,7 @@
 //fonts and colors
 $primary-color: #fffafa;
 $secondary-color: #444444;
-$accent-color: #FF8000; //in case I want span around Skopin
+$accent-color: #FF8000;
 $primary-font: 'Segoe UI', Tahoma, sans-serif;
 
 //images
@@ -34,8 +34,3 @@ $background-opacity: 0.7;
     }
 }
 
-// @mixin mediaXL {
-//     @media screen and (min-width: 1281px) {
-//         @content;
-//     }
-// }

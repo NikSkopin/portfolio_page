@@ -154,7 +154,13 @@ main#home {
 
 #contact .icons a {
   color: #fffafa;
-  padding: 0.4rem; }
+  padding: 0.2rem;
+  display: block;
+  font-size: 1.3rem;
+  text-align: left; }
+
+#contact .icons i {
+  margin-right: 2rem; }
 
 @media screen and (min-width: 501px) and (max-width: 968px) {
   nav .menu-nav {
@@ -277,6 +283,8 @@ main#home {
         border-radius: 6px; }
   .item {
     max-width: 300px; }
-  #contact .icons a:hover {
-    color: #FF8000;
-    transition: all 0.3s ease-out; } }
+  #contact .icons a {
+    font-size: 2rem; }
+    #contact .icons a:hover {
+      color: #FF8000;
+      transition: all 0.3s ease-out; } }
