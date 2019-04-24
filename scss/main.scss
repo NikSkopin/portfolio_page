@@ -151,6 +151,14 @@ main {
     }
 }
 
+#skills {
+    .container {
+        background-image: $skills-image;
+        @include background;
+    }
+}
+
+
 #work {
     .container {
         background-image: $work-image;

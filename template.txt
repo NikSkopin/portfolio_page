@@ -13,3 +13,6 @@ todo
 
 ++обводка вокруг ссылок outline:none
 поменять шрифт h2 для маленьких экранов
+причесать My Work - ссылки, технологии
+all sections backgrounds
+do something with 100vh height
