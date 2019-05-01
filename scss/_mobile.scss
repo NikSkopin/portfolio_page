@@ -1,20 +1,10 @@
 //Tablets & Small Laptops
 @include mediaMd {
-    nav {
-
-        .menu-nav {
-            width: 75%;
-            margin: 0 auto;    
-        }
-    
-        .nav-item {
-            font-size: 1.2rem;
-        }
-    }
 
     h1, h2, h3 {
         &.lg-heading {
             font-size: 4rem;
+            margin-top: 0;
         }
         &.sm-heading {
             margin-bottom: 4rem;
@@ -22,15 +12,12 @@
     }
 
     .section-wrapper{
-        text-align: left;
-    }
-
-    .section-wrapper-work {
-        text-align: left;
+        text-align: left;        
     }
 
     .container {
-        padding: 4rem;
+        margin-bottom: 10px;
+        padding: 10vh 4rem;
     }
 
     .projects {
@@ -60,6 +47,12 @@
         }
     }
 
+    .contact {
+        .container {
+            margin-bottom: 0;
+        }
+    }
+
 
     
 }
@@ -76,12 +69,11 @@
     }
 
     .section-wrapper {
-        position: relative;
+        text-align: left;
     }
 
     .container {
-        top: 2.5%;
-        margin-left: 40%;
+        margin: 1.25rem 0 1.25rem 40%;
         width: 60%;
         height: 95%;
         padding: 4rem;
@@ -93,25 +85,21 @@
         }
     }
 
-    nav {
+    .openNav {
+        display: none;
+    }
+
+    .overlay {
         position: fixed;
         height: 100vh;
         width: 40%;
         padding: 0;
-        z-index: 2;
-
-        &:after {
-            display: none;
-        }
+        background-color:$primary-color;
     }
 
-    .menu-nav {
-        position: absolute;
-        top: 30%;
-        height: 40%;
-        padding: 0;
-        flex-flow: column;
-        justify-content: center;    
+    .overlay-content {
+        margin-top: 0;
+        top: 20%;
     }
 
     .nav-item {
@@ -127,10 +115,14 @@
         }
     }
 
+    .overlay .closebtn {
+        display: none;
+    }
+
+
     main {
         .icons {
             a {
-
                 &:hover {
                     color: $accent-color;
                     @include easeOut;
@@ -138,27 +130,15 @@
             }
         }
     
-        &#home {
-            background-image: none;
-
-            .container {
-                background-image: $home-image;
-                @include background;
-            }
-    
+        .container {
+            margin-top: 0;
+            height: 100vh;
+            padding-top: 12rem;
         }
     
     }
 
-    .section-wrapper{
-        text-align: left;
-    }
-
-    .section-wrapper-work {
-        text-align: left;
-    }
-
-    
+   
     .projects {
         flex-flow: row nowrap;
         margin-bottom: 3rem;
@@ -174,7 +154,6 @@
     
         }
 
-
         &-preview {
             flex: 1;
         }
@@ -186,7 +165,6 @@
             align-items: center;
             justify-content: space-between;
         }
-
 
         .btn {
             display: inline;
@@ -218,6 +196,10 @@
     }
 
     #contact {
+        .container {
+            margin-bottom: 0;
+            height: 100vh;
+        }
         .icons {
             a {
                 font-size: 2rem;
