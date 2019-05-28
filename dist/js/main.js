@@ -1,27 +1,51 @@
 //Smooth scroll
 
 $('.menu-nav a').on('click', function(e) {
-    if (this.hash !=='') {
-        e.preventDefault();
+  if (this.hash !== '') {
+    e.preventDefault();
 
-        const hash = this.hash;
+    const hash = this.hash;
 
-        $('html, body').animate( {
-            scrollTop: $(hash).offset().top
-        },
-        800
-        );
-    }
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top
+      },
+      800
+    );
+  }
 });
 
 //Navigation menu
 
 /* Open */
 function openNav() {
-    document.querySelector(".overlay").style.height = "100%";
+  document.querySelector('.overlay').style.height = '100%';
 }
 
 /* Close */
 function closeNav() {
-    document.querySelector(".overlay").style.height = "0%";
-} 
+  const x = window.matchMedia('(max-width: 968px)');
+  if (x.matches) {
+    document.querySelector('.overlay').style.height = '0%';
+  }
+}
+
+/* Work section details toggle */
+
+const acc = document.getElementsByClassName('details-accordion');
+
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener('click', function() {
+    /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+    this.classList.toggle('active-details');
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === 'block') {
+      panel.style.display = 'none';
+    } else {
+      panel.style.display = 'block';
+    }
+  });
+}

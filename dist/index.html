@@ -14,18 +14,28 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="css/main.css">
-    
+
 </head>
 <body>
     <main id="home" class="section-wrapper">
         <nav class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul class="menu-nav overlay-content">
-                <li class="nav-item"><a href="#home" class="nav-link">home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">about me</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">My Skills</a></li>
-                <li class="nav-item"><a href="#work" class="nav-link">my work</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">contact me</a></li>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" onclick="closeNav()">home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" onclick="closeNav()">about me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" onclick="closeNav()">My Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#work" class="nav-link" onclick="closeNav()">my work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" onclick="closeNav()">contact me</a>
+                </li>
             </ul>
         </nav>
 
@@ -40,11 +50,11 @@
 
             <h1 class="lg-heading">Nikita <span class="text-secondary">Skopin</span></h1>
             <h2 class="sm-heading">Front-End Web Developer</h2>
-            <div class="icons">
-                <a href="#"><i class="fas fa-envelope fa-2x"></i></a>
-                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-            </div>        
+            <ul class="icons">
+                <li><a href="mailto:skopin.n@gmail.com"><i class="fas fa-envelope fa-2x"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/nikita-skopin-09850ab6/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                <li><a href="https://github.com/NikSkopin" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+            </ul>
         </div>
     </main>
 
@@ -67,7 +77,7 @@
                 Speciality: Financial Management
             </p>
             <h2 class="section-sm-heading">Briefly about me</h2>
-            <p class="paragraph">I am a goal oriented, enthusiastic and always evolving developer. Every day I try to learn new things, wether it IT related or something different (sport, music, psychology etc.). I have an experience working as a part and a leader of a team and working for myself. </p>
+            <p class="paragraph">I am a goal oriented, enthusiastic, self-driven and always evolving novice developer seeking for a fulltime position. Every day I try to learn new things, wether it is IT related or something different (sport, music, psychology etc.). Through my career path in different fields I have obtained a lot of general skills (patience, stress resistance, self management etc.) that would be useful on almost any position and on position of Front-End developer in particular.</p>
         </div>
     </section>
 
@@ -78,23 +88,23 @@
             <h2 class="section-sm-heading">HTML and CSS</h2>
             <p class="paragraph">
                 HTML and HTML5 semantic tags; <br>
-                CSS and CSS3: block model, positioning, float, flexbox, CSS grid, selectors, inheritance, responsiveness, mobile first and desktop first approaches;
+                CSS and CSS3: block model, positioning, float, flexbox, CSS grid, selectors, inheritance; responsive design, mobile first and desktop first approaches;
             </p>
 
             <h2 class="section-sm-heading">JavaScript</h2>
-            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="paragraph">Strong knowledge and ability to implement: basic data structures (numbers, strings, objects, arrays), functions, program flow control, closures, DOM manipulation, events handling, event delegation. ES6 syntax. </p>
 
             <h2 class="section-sm-heading">Other hard skills and knowleges</h2>
-            <p class="paragraph">Git; Bootstrap4, Sass, basic knowledge of Vue.js; Linux, Avocode, Adobe Photoshop, GIMP.</p>
+            <p class="paragraph">Git; Sass, Bootstrap4, basic knowledge of Vue.js and VUEX; Linux, Avocode, Adobe Photoshop, GIMP.</p>
 
             <h2 class="section-sm-heading">Soft Skills</h2>
-            <p class="paragraph">                
+            <p class="paragraph">
                 Self Management, Self Motivation, Teamwork, Ability to work in stressfull situations, Patience. <br>
                 Russian (native speaker), English (intermediate - upper intermediate level), Spanish (basic level), Polish (basic level)
             </p>
         </div>
         </section>
-    
+
 
     <section id="work" class="section-wrapper">
         <div class="container">
@@ -103,20 +113,47 @@
 
             <div class="projects">
                 <div class="projects-preview">
-                    <a href="#"><img src="img/bg_1.jpg" alt="Projects" class="projects-image"></a>
+                    <a href="#"><img src="img/works/work-cbd.png" alt="Projects" class="projects-image"></a>
                 </div>
                 <div class="projects-details">
-                    <p class="projects-details-description">My portfolio.</p>
-                    <div>
-                        <a href="#" class="btn-dark">
+                    <p class="projects-details-description">CBD shopping training project</p>
+                    <div class="projects-buttons">
+                        <button href="#" class="btn-light" target="_blank">
+                            <i class="fas fa-eye"></i> Project
+                        </button>
+                        <button href="#" class="btn-dark" target="_blank">
                             <i class="fab fa-github"></i> Github
-                        </a>
+                        </button>
+                        <button class="details-accordion btn btn-light">
+                            <i class="fas fa-chevron-down"></i> Details
+                        </button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, facere.</p>
+                            </div>
                     </div>
-                    <div class="projects-preview-techs">
-                        <span>html5</span>
-                        <span>css3</span>
-                        <span>JQuery</span>
-                        <span>Sass</span>
+                </div>
+            </div>
+
+            <div class="projects">
+                <div class="projects-preview">
+                    <a href="#"><img src="img/works/work-blueasy.png" alt="Projects" class="projects-image"></a>
+                </div>
+                <div class="projects-details">
+                    <p class="projects-details-description">BLUEASY training project</p>
+                    <div class="projects-buttons">
+                        <button href="#" class="btn-light" target="_blank">
+                            <i class="fas fa-eye"></i> Project
+                        </button>
+                        <button href="#" class="btn-dark" target="_blank">
+                            <i class="fab fa-github"></i> Github
+                        </button>
+                        <button class="details-accordion btn btn-light">
+                            <i class="fas fa-chevron-down"></i> Details
+                        </button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, facere.</p>
+                            </div>
+
                     </div>
                 </div>
             </div>
@@ -124,71 +161,66 @@
 
             <div class="projects">
                 <div class="projects-preview">
-                    <a href="#"><img src="img/works/snowboarding.jpg" alt="Projects" class="projects-image"></a>
+                    <a href="http://nikskopin.github.io/design_agency" target="_blank"><img src="img/works/work-helali.png" alt="Projects" class="projects-image"></a>
+                </div>
+                <div class="projects-details">
+                    <p class="projects-details-description">Design agency training project</p>
+                    <div class="projects-buttons">
+                        <button href="http://nikskopin.github.io/design_agency" class="btn-light" target="_blank">
+                            <i class="fas fa-eye"></i> Project
+                        </button>
+                        <button href="https://github.com/NikSkopin/design_agency" class="btn-dark" target="_blank">
+                            <i class="fab fa-github"></i> Github
+                        </button>
+                        <button class="details-accordion btn btn-light">
+                            <i class="fas fa-chevron-down"></i> Details
+                        </button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, facere.</p>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects">
+                <div class="projects-preview">
+                    <a href="http://nikskopin.github.io/Snowboarding_school" target="_blank"><img src="img/works/work-snow.png" alt="Projects" class="projects-image"></a>
                 </div>
                 <div class="projects-details">
                     <p class="projects-details-description">Web-page for a snowboarding school</p>
-                    <div>
-                        <a href="#" class="btn-light">
+                    <div class="projects-buttons">
+                        <button href="http://nikskopin.github.io/Snowboarding_school" class="btn-light" target="_blank">
                             <i class="fas fa-eye"></i> Project
-                        </a>
-                        <a href="#" class="btn-dark">
+                        </button>
+                        <button href="https://github.com/NikSkopin/Snowboarding_school" class="btn-dark" target="_blank">
                             <i class="fab fa-github"></i> Github
-                        </a>
-                    </div>
-                    <div class="projects-preview-techs">
-                        <span>html5</span>
-                        <span>css3</span>
-                        <span>JQuery</span>
-                        <span>Sass</span>
+                        </button>
+                        <button class="details-accordion btn btn-light">
+                            <i class="fas fa-chevron-down"></i> Details
+                        </button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, facere.</p>
+                            </div>
                     </div>
                 </div>
             </div>
 
+
             <div class="projects">
                 <div class="projects-preview">
-                    <a href="#"><img src="img/bg_4.jpg" alt="Projects" class="projects-image"></a>
+                    <a href="#"><img src="img/works/work-portfolio.png" alt="Projects" class="projects-image"></a>
                 </div>
                 <div class="projects-details">
-                    <p class="projects-details-description">Web-page for a design agency</p>
-                    <div>
-                        <a href="#" class="btn-light">
-                            <i class="fas fa-eye"></i> Project
-                        </a>
+                    <p class="projects-details-description">My portfolio. You are looking at it now.</p>
+                    <div class="projects-buttons">
                         <a href="#" class="btn-dark">
                             <i class="fab fa-github"></i> Github
                         </a>
-                    </div>
-                    <div class="projects-preview-techs">
-                        <span>html5</span>
-                        <span>css3</span>
-                        <span>JQuery</span>
-                        <span>Sass</span>
                     </div>
                 </div>
             </div>
 
-            <div class="projects">
-                <div class="projects-preview">
-                    <a href="#"><img src="img/bg_5.jpg" alt="Projects" class="projects-image"></a>
-                </div>
-                <div class="projects-details">
-                    <p class="projects-details-description">Bootstrap</p>
-                    <div>
-                        <a href="#" class="btn-light">
-                            <i class="fas fa-eye"></i> Project
-                        </a>
-                        <a href="#" class="btn-dark">
-                            <i class="fab fa-github"></i> Github
-                        </a>
-                    </div>
-                    <div class="projects-preview-techs">
-                        <span>html5</span>
-                        <span>css3</span>
-                        <span>bootstrap</span>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -196,11 +228,17 @@
         <div class="container">
             <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
             <h2 class="sm-heading">This is how you can reach me...</h2>
-            <div class="icons">
-                <a href="mailto:skopin.n@gmail.com"><i class="fas fa-envelope"></i>mailto: skopin.n@gmail.com</a>
-                <a href="https://www.linkedin.com/in/nikita-skopin-09850ab6/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                <a href="https://github.com/NikSkopin" target="_blank"><i class="fab fa-github"></i>GitHub</a>
-            </div>        
+            <ul class="icons">
+                <li><a href="mailto:skopin.n@gmail.com">
+                    <i class="fas fa-envelope"></i>mailto: skopin.n@gmail.com
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/nikita-skopin-09850ab6/" target="_blank">
+                    <i class="fab fa-linkedin"></i>LinkedIn
+                </a></li>
+                <li><a href="https://github.com/NikSkopin" target="_blank">
+                    <i class="fab fa-github"></i>GitHub
+                </a></li>
+            </ul>
 
         </div>
     </section>
@@ -208,6 +246,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src=js/main.js></script>
 
-    
+
 </body>
 </html>
