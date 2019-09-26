@@ -17,12 +17,10 @@ $('.menu-nav a').on('click', function(e) {
 
 //Navigation menu
 
-/* Open */
 function openNav() {
   document.querySelector('.overlay').style.height = '100%';
 }
 
-/* Close */
 function closeNav() {
   const x = window.matchMedia('(max-width: 968px)');
   if (x.matches) {
