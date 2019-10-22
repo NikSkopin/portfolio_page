@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+
+    <!-- normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main id="home" class="section-wrapper">
+      <nav class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <ul class="menu-nav overlay-content">
+          <li class="nav-item">
+            <a href="#home" class="nav-link" onclick="closeNav()">home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" onclick="closeNav()">about me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" onclick="closeNav()"
+              >My Skills</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#work" class="nav-link" onclick="closeNav()">my work</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" onclick="closeNav()"
+              >contact me</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="openNav" onclick="openNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="container">
+        <h1 class="lg-heading">
+          Nikita <span class="text-secondary">Skopin</span>
+        </h1>
+        <h2 class="sm-heading">Front-End Web Developer</h2>
+        <ul class="icons">
+          <li>
+            <a href="mailto:skopin.n@gmail.com"
+              ><i class="fas fa-envelope fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/nikita-skopin-09850ab6/"
+              target="_blank"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/NikSkopin" target="_blank"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <section id="about" class="section-wrapper">
+      <div class="container">
+        <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
+        <h2 class="section-sm-heading">Personal information</h2>
+        <p class="paragraph">
+          Full name: Nikita Skopin <br />
+          Date of Birth: April 27, 1986 <br />
+          Nationality: Russian <br />
+          Residence: Krakow, Poland
+        </p>
+
+        <h2 class="section-sm-heading">Education</h2>
+        <p class="paragraph">
+          Novosibirsk State Technical University, Novosibirsk, Russia <br />
+          Speciality: Automation of Technology Processes <br /><br />
+          Novosibirsk State University of Economic and Management <br />
+          Speciality: Financial Management
+        </p>
+        <h2 class="section-sm-heading">Briefly about me</h2>
+        <p class="paragraph">
+          I am a goal oriented, enthusiastic, self-driven and always evolving
+          novice developer seeking for a fulltime position. Every day I try to
+          learn new things, wether it is IT related or something different
+          (sport, music, psychology etc.). Through my career path in different
+          fields I have obtained a lot of general skills (patience, stress
+          resistance, self management etc.) that would be useful on almost any
+          position and on position of Front-End developer in particular.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section-wrapper">
+      <div class="container">
+        <h1 class="lg-heading">
+          My <span class="text-secondary">Skills</span>
+        </h1>
+
+        <h2 class="section-sm-heading">HTML and CSS</h2>
+        <p class="paragraph">
+          HTML and HTML5 semantic tags; <br />
+          CSS and CSS3: block model, positioning, float, flexbox, CSS grid,
+          selectors, inheritance; responsive design, mobile first and desktop
+          first approaches;
+        </p>
+
+        <h2 class="section-sm-heading">JavaScript</h2>
+        <p class="paragraph">
+          Strong knowledge and ability to implement: basic data structures
+          (numbers, strings, objects, arrays), functions, program flow control,
+          closures, DOM manipulation, events handling, event delegation. ES6
+          syntax.
+        </p>
+
+        <h2 class="section-sm-heading">Other hard skills and knowleges</h2>
+        <p class="paragraph">
+          Git, NPM, Webpack; Vue.js and VUEX, Sass, Bootstrap4; basic knowledge
+          of node.js and Express; Linux, Avocode, Adobe Photoshop, GIMP.
+        </p>
+
+        <h2 class="section-sm-heading">Soft Skills</h2>
+        <p class="paragraph">
+          Self Management, Self Motivation, Teamwork, Ability to work in
+          stressfull situations, Patience. <br />
+          Russian (native speaker), English (intermediate - upper intermediate
+          level), Spanish (basic level, A2), Polish (basic level, A1)
+        </p>
+      </div>
+    </section>
+
+    <section id="work" class="section-wrapper">
+      <div class="container">
+        <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
+        <h2 class="sm-heading">Check out some of my projects...</h2>
+
+        <div class="projects">
+          <div class="projects-preview">
+            <a
+              href="https://nikskopin.github.io/shopping_cart/"
+              target="_blank"
+            >
+              <img
+                src="img/works/shopping-cart.png"
+                alt="Projects"
+                class="projects-image"
+              />
+            </a>
+          </div>
+          <div class="projects-details">
+            <p class="projects-details-description">
+              Vue.js shopping cart training project
+            </p>
+            <div class="projects-buttons">
+              <a
+                href="https://nikskopin.github.io/shopping_cart/"
+                class="btn-light"
+                target="_blank"
+              >
+                <i class="fas fa-eye"></i> Project
+              </a>
+              <a
+                href="https://github.com/NikSkopin/shopping_cart"
+                class="btn-dark"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> Github
+              </a>
+              <button class="details-accordion btn btn-light">
+                <i class="fas fa-chevron-down"></i> Details
+              </button>
+              <div class="panel">
+                <p>This is my first project using Vue.js and Vuex.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects">
+          <div class="projects-preview">
+            <a href="https://nikskopin.github.io/CBD_shopping/" target="_blank">
+              <img
+                src="img/works/work-cbd.png"
+                alt="Projects"
+                class="projects-image"
+              />
+            </a>
+          </div>
+          <div class="projects-details">
+            <p class="projects-details-description">
+              CBD shopping training project
+            </p>
+            <div class="projects-buttons">
+              <a
+                href="https://nikskopin.github.io/CBD_shopping/"
+                class="btn-light"
+                target="_blank"
+              >
+                <i class="fas fa-eye"></i> Project
+              </a>
+              <a
+                href="https://github.com/NikSkopin/CBD_shopping"
+                class="btn-dark"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> Github
+              </a>
+              <button class="details-accordion btn btn-light">
+                <i class="fas fa-chevron-down"></i> Details
+              </button>
+              <div class="panel">
+                <p>
+                  This is a responsive training project I have done using mostly
+                  flexbox if needed. As tried to practice my JavaScript, I put
+                  several elements written in vanilla JS, without using JQuery
+                  or other plugins. All scripts were written by myself.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects">
+          <div class="projects-preview">
+            <a href="https://nikskopin.github.io/blueasy_grid/" target="_blank">
+              <img
+                src="img/works/work-blueasy.png"
+                alt="Projects"
+                class="projects-image"
+              />
+            </a>
+          </div>
+          <div class="projects-details">
+            <p class="projects-details-description">BLUEASY training project</p>
+            <div class="projects-buttons">
+              <a
+                href="https://nikskopin.github.io/blueasy_grid/"
+                class="btn-light"
+                target="_blank"
+              >
+                <i class="fas fa-eye"></i> Project
+              </a>
+              <a
+                href="https://github.com/NikSkopin/blueasy_grid"
+                class="btn-dark"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> Github
+              </a>
+              <button class="details-accordion btn btn-light">
+                <i class="fas fa-chevron-down"></i> Details
+              </button>
+              <div class="panel">
+                <p>
+                  This one is a project where I focused on the CSS-grid. There
+                  are no scripts or complicated markup and styling. The site is
+                  responsive.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects">
+          <div class="projects-preview">
+            <a href="http://nikskopin.github.io/design_agency" target="_blank">
+              <img
+                src="img/works/work-helali.png"
+                alt="Projects"
+                class="projects-image"
+              />
+            </a>
+          </div>
+          <div class="projects-details">
+            <p class="projects-details-description">
+              Design agency training project
+            </p>
+            <div class="projects-buttons">
+              <a
+                href="http://nikskopin.github.io/design_agency"
+                class="btn-light"
+                target="_blank"
+              >
+                <i class="fas fa-eye"></i> Project
+              </a>
+              <a
+                href="https://github.com/NikSkopin/design_agency"
+                class="btn-dark"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> Github
+              </a>
+              <button class="details-accordion btn btn-light">
+                <i class="fas fa-chevron-down"></i> Details
+              </button>
+              <div class="panel">
+                <p>
+                  This project was built using flexbox and a little bit of
+                  CSS-grid. The styling was kind of challenging cause there are
+                  a lot of non-standart elements. Here I started to use Sass.
+                  The site is responsive.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects">
+          <div class="projects-preview">
+            <a
+              href="http://nikskopin.github.io/Snowboarding_school"
+              target="_blank"
+            >
+              <img
+                src="img/works/work-snow.png"
+                alt="Projects"
+                class="projects-image"
+              />
+            </a>
+          </div>
+          <div class="projects-details">
+            <p class="projects-details-description">
+              Web-page for a snowboarding school
+            </p>
+            <div class="projects-buttons">
+              <a
+                href="http://nikskopin.github.io/Snowboarding_school"
+                class="btn-light"
+                target="_blank"
+              >
+                <i class="fas fa-eye"></i> Project
+              </a>
+              <a
+                href="https://github.com/NikSkopin/Snowboarding_school"
+                class="btn-dark"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> Github
+              </a>
+
+              <button class="details-accordion btn btn-light">
+                <i class="fas fa-chevron-down"></i> Details
+              </button>
+              <div class="panel">
+                <p>
+                  Training project. Quite simple web-page where I implemented
+                  HTML5, CSS, a bit of JavaScript. Learned to embed Google maps
+                  into web-page. Responsive.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects">
+          <div class="projects-preview">
+            <a href="#"
+              ><img
+                src="img/works/work-portfolio.png"
+                alt="Projects"
+                class="projects-image"
+            /></a>
+          </div>
+          <div class="projects-details">
+            <p class="projects-details-description">
+              My portfolio. You are looking at it now.
+            </p>
+            <div class="projects-buttons">
+              <a
+                href="https://github.com/NikSkopin/portfolio_page"
+                target="_blank"
+                class="btn-dark"
+              >
+                <i class="fab fa-github"></i> Github
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects">
+          <div class="projects-preview">
+            <a href="#"
+              ><img
+                src="img/works/reading-tracker.png"
+                alt="Projects"
+                class="projects-image"
+            /></a>
+          </div>
+          <div class="projects-details">
+            <p class="projects-details-description">
+              Reading Tracker. Fullstack Vue.js application. In progress...
+            </p>
+            <div class="projects-buttons">
+              <a
+                href="https://github.com/NikSkopin/reading-tracker"
+                target="_blank"
+                class="btn-dark"
+              >
+                <i class="fab fa-github"></i> Github
+              </a>
+            </div>
+            <button class="details-accordion btn btn-light">
+              <i class="fas fa-chevron-down"></i> Details
+            </button>
+            <div class="panel">
+              <p>
+                My current project. This is a fullstack Vue (including
+                vue-router, vuex), Express and MySQL application. I also used
+                Google Books API, Vuetify, lodash. It is almost done, but not
+                deployed yet. If you want to check out how it works, you can
+                follow the instructions in the readme file.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-wrapper contact">
+      <div class="container">
+        <h1 class="lg-heading">
+          Contact <span class="text-secondary">Me</span>
+        </h1>
+        <h2 class="sm-heading">This is how you can reach me...</h2>
+        <ul class="icons">
+          <li>
+            <a href="mailto:skopin.n@gmail.com">
+              <i class="fas fa-envelope"></i>mailto: skopin.n@gmail.com
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/nikita-skopin-09850ab6/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/NikSkopin" target="_blank">
+              <i class="fab fa-github"></i>GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
