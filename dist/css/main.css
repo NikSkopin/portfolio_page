@@ -30,9 +30,14 @@ img {
   width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
 header {
   width: 100%;
   height: 100vh;
+  padding-bottom: 1px;
 }
 
 .top-nav {
@@ -172,22 +177,107 @@ header {
 .landing-text h1 {
   font-size: 20rem;
   font-family: "the_historia_demo", sans-serif;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffe838), to(#fd57bf));
-  background: linear-gradient(to top, #ffe838, #fd57bf);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   padding: 1rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   margin: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffe838), to(#fd57bf));
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .landing-text h6 {
   font-size: 2rem;
   font-weight: 300;
   margin: 0;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 1px;
+}
+
+.about .container {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .container .profile-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 5rem;
+}
+
+.about .container .about-details {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.about .container .about-details-heading {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 6rem;
+}
+
+.about .container .about-details-heading h1 {
+  font-size: 10rem;
+  opacity: 0.3;
+  margin-bottom: 0;
+}
+
+.about .container .about-details-heading h6 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.about .container .about-details h2 {
+  font-size: 3rem;
+}
+
+.about .container .about-details ul {
+  padding: 0;
+}
+
+.about .container .about-details ul li {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 0.4rem;
+}
+
+.about .container .about-details ul li span {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.about .container .about-details .social-media {
+  margin-top: 5rem;
+}
+
+.about .container .about-details .social-media i {
+  font-size: 5rem;
+  -webkit-transition: color 650ms;
+  transition: color 650ms;
+}
+
+.about .container .about-details .social-media i:hover {
+  color: #4267b2;
 }
 /*# sourceMappingURL=main.css.map */
