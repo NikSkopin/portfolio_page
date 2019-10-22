@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'the_historia_demo';
+  src: url('thehistoriademo-webfont.woff2') format('woff2'),
+    url('thehistoriademo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -19,6 +19,11 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/custom-fonts.css" />
 
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -27,6 +32,331 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <header>
+      <div class="menu-toggler">
+        <div class="bar half start"></div>
+        <div class="bar"></div>
+        <div class="bar half end"></div>
+      </div>
+
+      <nav class="top-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-list-link">Home</a></li>
+          <li><a href="#about" class="nav-list-link">About</a></li>
+          <li><a href="#skills" class="nav-list-link">My Skills</a></li>
+          <li><a href="#portfolio" class="nav-list-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-list-link">Contact me</a></li>
+        </ul>
+      </nav>
+
+      <div class="landing-text">
+        <h1>
+          Nikita Skopin
+        </h1>
+        <h6>Front-End Developer</h6>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <!-- FIXME: may be this div is excess -->
+      <div class="container">
+        <div class="profile-img">
+          <img src="img/profile.jpeg" alt="profile photo" />
+        </div>
+        <div class="about-details">
+          <div class="about-details-heading">
+            <h1>About</h1>
+            <!-- FIXME: may be not an h6, span instead -->
+            <h6>Myself</h6>
+          </div>
+
+          <h2 class="section-sm-heading">Personal information</h2>
+          <ul>
+            <li>Full name: Nikita Skopin</li>
+            <li>Date of Birth: April 27, 1986</li>
+            <li>Nationality: Russian</li>
+            <li>Residence: Krakow, Poland</li>
+          </ul>
+
+          <h2 class="section-sm-heading">Education</h2>
+          <ul>
+            <li>
+              Novosibirsk State Technical University, Novosibirsk, Russia
+              <span>Speciality: Automation of Technology Processes</span>
+            </li>
+            <li>
+              Novosibirsk State University of Economic and Management
+              <span>Speciality: Financial Management</span>
+            </li>
+          </ul>
+
+          <h2 class="section-sm-heading">Briefly about me</h2>
+          <p class="paragraph">
+            I am a goal oriented, enthusiastic, self-driven and always evolving
+            novice developer seeking for a fulltime position. Every day I try to
+            learn new things, wether it is IT related or something different
+            (sport, music, psychology etc.). Through my career path in different
+            fields I have obtained a lot of general skills (patience, stress
+            resistance, self management etc.) that would be useful on almost any
+            position and on position of Front-End developer in particular.
+          </p>
+        </div>
+        <div class="social-media">
+          <ul class="nav-list">
+            <li>
+              <a href="mailto:skopin.n@gmail.com" class="icon-link"
+                ><i class="fas fa-envelope fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/nikita-skopin-09850ab6/"
+                class="icon-link"
+                target="_blank"
+                ><i class="fab fa-linkedin fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/NikSkopin"
+                target="_blank"
+                class="icon-link"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <h1>My Skills</h1>
+          <h6>Check what I know</h6>
+        </div>
+
+        <ul class="my-skills">
+          <li class="my-skills-skill">
+            <div class="my-skills-skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h2>HTML & CSS</h2>
+            <p>
+              HTML and HTML5 semantic tags; CSS and CSS3: block model,
+              positioning, float, flexbox, CSS grid, selectors, inheritance;
+              responsive design, mobile first and desktop first approaches;
+            </p>
+          </li>
+          <li class="my-skills-skill">
+            <div class="my-skills-skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h2>JavaScript</h2>
+            <p>
+              Strong knowledge and ability to implement: basic data structures
+              (numbers, strings, objects, arrays), functions, program flow
+              control, closures, DOM manipulation, events handling, event
+              delegation. ES6 syntax.
+            </p>
+          </li>
+          <li class="my-skills-skill">
+            <div class="my-skills-skill-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h2>Other skills and tools</h2>
+            <p>
+              Git, NPM, Webpack; Vue.js and VUEX, Sass, Bootstrap4; basic
+              knowledge of node.js and Express; Linux, Avocode, Adobe Photoshop,
+              GIMP.
+            </p>
+          </li>
+          <li class="my-skills-skill">
+            <div class="my-skills-skill-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h2>Soft Skills</h2>
+            <p>
+              Self Management, Self Motivation, Teamwork, Ability to work in
+              stressfull situations, Patience. <br />
+              <!-- TODO: check if I can separate it and kind of accent it -->
+              Russian (native speaker), English (intermediate - upper
+              intermediate level), Spanish (basic level, A2), Polish (basic
+              level, A2)
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Portfolio</h1>
+          <h6>Check some of my recent work</h6>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-img">
+            <img src="img/works/shopping-cart.png" alt="project image" />
+          </div>
+          <div class="portfolio-description">
+            <h6>Vue.js shopping cart training project</h6>
+            <p>This is my first project using Vue.js and Vuex.</p>
+            <a href="https://nikskopin.github.io/shopping_cart/" target="_blank"
+              >Open project</a
+            >
+            <a href="https://github.com/NikSkopin/shopping_cart" target="_blank"
+              >Open source code</a
+            >
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-description">
+            <h6>CBD shopping training project</h6>
+            <p>
+              This is a responsive training project I have done using mostly
+              flexbox if needed. As tried to practice my JavaScript, I put
+              several elements written in vanilla JS, without using JQuery or
+              other plugins. All scripts were written by myself.
+            </p>
+            <a href="https://nikskopin.github.io/CBD_shopping/" target="_blank"
+              >Open project</a
+            >
+            <a href="https://github.com/NikSkopin/CBD_shopping" target="_blank"
+              >Open source code</a
+            >
+          </div>
+          <!-- FIXME: if it is flex, just use flex to change order -->
+          <div class="portfolio-img">
+            <img src="img/works/work-cbd.png" alt="project image" />
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-img">
+            <img src="img/works/work-blueasy.png" alt="project image" />
+          </div>
+          <div class="portfolio-description">
+            <h6>BLUEASY training project</h6>
+            <p>
+              This one is a project where I focused on the CSS-grid. There are
+              no scripts or complicated markup and styling. The site is
+              responsive.
+            </p>
+            <a href="https://nikskopin.github.io/blueasy_grid/" target="_blank"
+              >Open project</a
+            >
+            <a href="https://github.com/NikSkopin/blueasy_grid" target="_blank"
+              >Open source code</a
+            >
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-description">
+            <h6>Design agency training project</h6>
+            <p>
+              This project was built using flexbox and a little bit of CSS-grid.
+              The styling was kind of challenging cause there are a lot of
+              non-standart elements. Here I started to use Sass. The site is
+              responsive.
+            </p>
+            <a href="http://nikskopin.github.io/design_agency" target="_blank"
+              >Open project</a
+            >
+            <a href="https://github.com/NikSkopin/design_agency" target="_blank"
+              >Open source code</a
+            >
+          </div>
+          <div class="portfolio-img">
+            <img src="img/works/work-helali.png" alt="project image" />
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-img">
+            <img src="img/works/work-snow.png" alt="project image" />
+          </div>
+          <div class="portfolio-description">
+            <h6>Web-page for a snowboarding school</h6>
+            <p>
+              Training project. Quite simple web-page where I implemented HTML5,
+              CSS, a bit of JavaScript. Learned to embed Google maps into
+              web-page. Responsive.
+            </p>
+            <a
+              href="http://nikskopin.github.io/Snowboarding_school"
+              target="_blank"
+              >Open project</a
+            >
+            <a
+              href="https://github.com/NikSkopin/Snowboarding_school"
+              target="_blank"
+              >Open source code</a
+            >
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-description">
+            <h6>
+              Reading Tracker. Fullstack Vue.js and Express.js application. In
+              progress...
+            </h6>
+            <p>
+              My current project. This is a fullstack Vue (including vue-router,
+              vuex), Express and MySQL application. I also used Google Books
+              API, Vuetify, lodash. It is almost done, but not deployed yet. If
+              you want to check out how it works, you can follow the
+              instructions in the readme file.
+            </p>
+            <!-- <a href="#" target="_blank"
+              >Open project</a
+            > -->
+            <a
+              href="https://github.com/NikSkopin/reading-tracker"
+              target="_blank"
+              >Open source code</a
+            >
+          </div>
+          <div class="portfolio-img">
+            <img src="img/works/reading-tracker.png" alt="project image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Contact Me</h1>
+          <h6>This is how you can reach me...</h6>
+        </div>
+        <ul class="icons">
+          <li>
+            <a href="mailto:skopin.n@gmail.com">
+              <i class="fas fa-envelope"></i>mailto: skopin.n@gmail.com
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/nikita-skopin-09850ab6/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/NikSkopin" target="_blank">
+              <i class="fab fa-github"></i>GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </body>
