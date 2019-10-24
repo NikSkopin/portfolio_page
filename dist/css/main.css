@@ -16,6 +16,10 @@ body {
   background-size: cover;
 }
 
+section {
+  padding-bottom: 1px;
+}
+
 a {
   text-decoration: none;
   color: #eee;
@@ -198,35 +202,6 @@ header {
 
 .about {
   width: 100%;
-  height: 100vh;
-  padding-bottom: 1px;
-}
-
-.about .container {
-  width: 80%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.about .container .profile-img {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-right: 5rem;
-}
-
-.about .container .about-details {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .about .container .about-details-heading {
@@ -279,5 +254,119 @@ header {
 
 .about .container .about-details .social-media i:hover {
   color: #4267b2;
+}
+
+.skills .container .my-skills {
+  margin-top: 10rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2.5rem;
+  text-align: center;
+}
+
+.skills .container .my-skills span {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.skills .container .my-skills-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 2rem;
+}
+
+.skills .container .my-skills-skill h2 {
+  margin: 2rem -2px 2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.skills .container .my-skills-skill-icon {
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid #ffe838;
+  background-color: #fd57bf;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.skills .container .my-skills-skill-icon i {
+  color: #ffe838;
+  font-size: 5rem;
+  margin: auto;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  height: 100%;
+  margin: 8rem auto;
+  position: relative;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.section-heading h1 {
+  font-size: 3.5rem;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.section-heading h1:before, .section-heading h1:after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.section-heading h1:before {
+  width: 10rem;
+  height: 3px;
+  border-radius: 0.8rem;
+}
+
+.section-heading h1:after {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  bottom: -1rem;
+}
+
+.section-heading h6 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 0;
 }
 /*# sourceMappingURL=main.css.map */

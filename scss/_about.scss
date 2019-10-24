@@ -1,22 +1,13 @@
 .about {
   width: 100%;
-  height: 100vh;
-  padding-bottom: 1px;
 
   .container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .profile-img {
-      flex: 1;
-      margin-right: 5rem;
-    }
+    // .profile-img {
+    //   flex: 1;
+    //   margin-right: 5rem;
+    // }
 
     .about-details {
-      flex: 1;
       &-heading {
         text-align: center;
         text-transform: uppercase;

@@ -1,7 +1,9 @@
 //fonts and colors
-$primary-color: #fffafa;
+$primary-color: #fff;
 $secondary-color: #eee;
 $accent-color: #4267b2;
+$gradient-start: #ffe838;
+$gradient-end: #fd57bf;
 $nav-color: #16162d;
 $primary-font: 'Roboto', sans-serif;
 $secondary-font: 'the_historia_demo', sans-serif;
@@ -11,7 +13,7 @@ $secondary-font: 'the_historia_demo', sans-serif;
 }
 
 @mixin clipping {
-  background: linear-gradient(to top, #ffe838, #fd57bf);
+  background: linear-gradient(to top, $gradient-start, $gradient-end);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
