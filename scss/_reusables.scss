@@ -2,7 +2,7 @@
   width: 90%;
   max-width: 120rem;
   height: 100%;
-  margin: 8rem auto;
+  margin: 6rem auto;
   position: relative;
 }
 
@@ -47,4 +47,8 @@
     font-weight: 300;
     margin-top: 0;
   }
+}
+
+.has-margin-right {
+  margin-right: 5rem;
 }

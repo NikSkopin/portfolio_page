@@ -319,11 +319,22 @@ header {
           transform: rotate(-45deg);
 }
 
+.skills .container .my-skills-skill h6 {
+  margin: 1rem 0 0.8rem 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.skills .container .my-skills-skill ul {
+  padding-left: 1.6rem;
+  list-style: initial;
+}
+
 .container {
   width: 90%;
   max-width: 120rem;
   height: 100%;
-  margin: 8rem auto;
+  margin: 6rem auto;
   position: relative;
 }
 
@@ -368,5 +379,59 @@ header {
   font-size: 1.6rem;
   font-weight: 300;
   margin-top: 0;
+}
+
+.has-margin-right {
+  margin-right: 5rem;
+}
+
+.portfolio-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.portfolio-item:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.portfolio-description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.portfolio-description h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.portfolio-description a {
+  display: inline-block;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #3883ff;
+  margin-right: 1.5rem;
+  -webkit-transition: color 650ms;
+  transition: color 650ms;
+}
+
+.portfolio-description a:hover {
+  color: #2f67cd;
 }
 /*# sourceMappingURL=main.css.map */
