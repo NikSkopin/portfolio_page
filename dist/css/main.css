@@ -434,4 +434,34 @@ header {
 .portfolio-description a:hover {
   color: #2f67cd;
 }
+
+.contact {
+  height: 100vh;
+}
+
+.contact .container {
+  margin: 0;
+}
+
+.contact .container .icons {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.contact .container .icons li {
+  margin-bottom: 1.5rem;
+}
+
+.contact .container .icons li a {
+  -webkit-transition: color 650ms;
+  transition: color 650ms;
+}
+
+.contact .container .icons li a:hover {
+  color: #2f67cd;
+}
+
+.contact .container .icons li a i {
+  margin-right: 1.5rem;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+.contact {
+  height: 100vh;
+
+  .container {
+    margin: 0;
+
+    .icons {
+      font-size: 3rem;
+      font-weight: 300;
+
+      li {
+        margin-bottom: 1.5rem;
+
+        a {
+          transition: color 650ms;
+
+          &:hover {
+            color: #2f67cd;
+          }
+
+          i {
+            margin-right: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
