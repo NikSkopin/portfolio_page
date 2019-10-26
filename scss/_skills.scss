@@ -1,60 +1,58 @@
 .skills {
-  .container {
-    .my-skills {
-      margin-top: 10rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-      gap: 2.5rem;
-      text-align: center;
+  .my-skills {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2.5rem;
+    text-align: center;
 
-      span {
-        font-size: 1.8rem;
-        font-weight: 300;
-        text-align: left;
-        margin-bottom: 1rem;
+    span {
+      font-size: 1.8rem;
+      font-weight: 300;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    &-skill {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: left;
+      padding: 2rem;
+
+      h2 {
+        margin: 2rem -2px 2rem 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
       }
 
-      &-skill {
+      &-icon {
+        width: 10rem;
+        height: 10rem;
+        border: 3px solid $gradient-start;
+        background-color: $gradient-end;
+        margin-bottom: 2rem;
         display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: left;
-        padding: 2rem;
+        transform: rotate(45deg);
+        align-self: center;
 
-        h2 {
-          margin: 2rem -2px 2rem 0;
-          text-transform: uppercase;
-          letter-spacing: 2px;
+        i {
+          color: $gradient-start;
+          font-size: 5rem;
+          margin: auto;
+          transform: rotate(-45deg);
         }
+      }
 
-        &-icon {
-          width: 10rem;
-          height: 10rem;
-          border: 3px solid $gradient-start;
-          background-color: $gradient-end;
-          margin-bottom: 2rem;
-          display: flex;
-          transform: rotate(45deg);
-          align-self: center;
+      h6 {
+        margin: 1rem 0 0.8rem 0;
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
 
-          i {
-            color: $gradient-start;
-            font-size: 5rem;
-            margin: auto;
-            transform: rotate(-45deg);
-          }
-        }
-
-        h6 {
-          margin: 1rem 0 0.8rem 0;
-          font-size: 1.8rem;
-          font-weight: 400;
-        }
-
-        ul {
-          padding-left: 1.6rem;
-          list-style: initial;
-        }
+      ul {
+        padding-left: 1.6rem;
+        list-style: initial;
       }
     }
   }

@@ -5,6 +5,10 @@ $accent-color: #4267b2;
 $gradient-start: #ffe838;
 $gradient-end: #fd57bf;
 $nav-color: #16162d;
+$link: #3883ff;
+$link-hover: #2f67cd;
+$up-btn-icon: #221e3f;
+
 $primary-font: 'Roboto', sans-serif;
 $secondary-font: 'the_historia_demo', sans-serif;
 
@@ -21,13 +25,12 @@ $secondary-font: 'the_historia_demo', sans-serif;
 
 //responsiveness
 @mixin mediaMd {
-  @media screen and (min-width: 501px) and (max-width: 968px) {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
-
-@mixin mediaLg {
-  @media screen and (min-width: 969px) {
+@mixin mediaSm {
+  @media screen and (max-width: 600px) {
     @content;
   }
 }

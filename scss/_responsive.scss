@@ -1,7 +1,98 @@
-//Tablets & Small Laptops
 @include mediaMd {
+  body {
+    background: url('../img/sitebg2.jpg') no-repeat center fixed;
+  }
+
+  .section-heading {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  header {
+    .landing-text {
+      h1 {
+        font-size: 15rem;
+      }
+
+      h6 {
+        font-size: 1.7rem;
+      }
+    }
+
+    .nav-list {
+      flex-direction: column;
+
+      li {
+        margin: 2rem 0;
+      }
+
+      &-link {
+        font-size: 4.5rem;
+      }
+    }
+  }
+
+  .skills {
+    .my-skills {
+      &-skill {
+        &-icon {
+          width: 7rem;
+          height: 7rem;
+
+          i {
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
 }
 
-//Desktops & Laptops
-@include mediaLg {
+@include mediaSm {
+  header {
+    .menu-toggler {
+      top: 2rem;
+      right: 2rem;
+    }
+
+    .landing-text {
+      h1 {
+        font-size: 8rem;
+      }
+
+      h6 {
+        font-size: 1.4rem;
+      }
+    }
+    .nav-list {
+      &-link {
+        font-size: 3.5rem;
+      }
+    }
+  }
+
+  .portfolio {
+    &-item {
+      flex-direction: column;
+
+      &-links {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+          margin-right: 0;
+        }
+      }
+    }
+    &-img {
+      margin: 0 0 2rem 0;
+    }
+    &-description {
+      margin: 0;
+      h3 {
+        text-align: center;
+      }
+    }
+  }
 }

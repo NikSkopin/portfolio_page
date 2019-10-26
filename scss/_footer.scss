@@ -1,12 +1,14 @@
 .contact {
   height: 100vh;
+  position: relative;
 
   .container {
-    margin: 0;
+    margin-bottom: 0;
 
     .icons {
       font-size: 3rem;
       font-weight: 300;
+      padding: 0;
 
       li {
         margin-bottom: 1.5rem;
@@ -15,7 +17,7 @@
           transition: color 650ms;
 
           &:hover {
-            color: #2f67cd;
+            color: $link-hover;
           }
 
           i {

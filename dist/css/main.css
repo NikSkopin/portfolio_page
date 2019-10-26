@@ -36,15 +36,47 @@ img {
 
 ul {
   list-style: none;
+  padding-left: 0;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+            box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+            box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+            box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+            box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+            box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+            box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+  }
 }
 
 header {
   width: 100%;
   height: 100vh;
   padding-bottom: 1px;
+  position: relative;
 }
 
-.top-nav {
+header .top-nav {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -57,38 +89,19 @@ header {
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
-.top-nav.open {
+header .top-nav.open {
   top: 0;
   border-radius: initial;
 }
 
-.nav-list {
-  list-style: none;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav-list li {
-  margin: 0 2rem;
-}
-
-.nav-list-link {
+header .nav-list-link {
   font-family: "the_historia_demo", sans-serif;
   font-size: 5rem;
   padding: 1rem;
 }
 
-.nav-list-link:hover,
-.nav-list-link :focus {
+header .nav-list-link:hover,
+header .nav-list-link :focus {
   background: -webkit-gradient(linear, left bottom, left top, from(#ffe838), to(#fd57bf));
   background: linear-gradient(to top, #ffe838, #fd57bf);
   background-clip: text;
@@ -96,8 +109,8 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
-.menu-toggler {
-  position: absolute;
+header .menu-toggler {
+  position: fixed;
   top: 5rem;
   right: 5rem;
   width: 5rem;
@@ -120,12 +133,12 @@ header {
   transition: transform 650ms ease-out, -webkit-transform 650ms ease-out;
 }
 
-.menu-toggler.open {
+header .menu-toggler.open {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.menu-toggler .bar {
+header .menu-toggler .bar {
   background: -webkit-gradient(linear, left top, right top, from(#ffe838), to(#fd57bf));
   background: linear-gradient(to right, #ffe838, #fd57bf);
   width: 100%;
@@ -133,11 +146,11 @@ header {
   border-radius: 0.8rem;
 }
 
-.menu-toggler .bar.half {
+header .menu-toggler .bar.half {
   width: 50%;
 }
 
-.menu-toggler .bar.start {
+header .menu-toggler .bar.start {
   -webkit-transform-origin: right;
           transform-origin: right;
   -webkit-transition: -webkit-transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
@@ -146,7 +159,7 @@ header {
   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57), -webkit-transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
 
-.menu-toggler .bar.end {
+header .menu-toggler .bar.end {
   -ms-flex-item-align: end;
       align-self: flex-end;
   -webkit-transform-origin: left;
@@ -157,17 +170,17 @@ header {
   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57), -webkit-transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
 
-.open .bar.start {
+header .open .bar.start {
   -webkit-transform: rotate(-450deg) translateX(0.8rem);
           transform: rotate(-450deg) translateX(0.8rem);
 }
 
-.open .bar.end {
+header .open .bar.end {
   -webkit-transform: rotate(-450deg) translateX(-0.8rem);
           transform: rotate(-450deg) translateX(-0.8rem);
 }
 
-.landing-text {
+header .landing-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -178,7 +191,7 @@ header {
   z-index: 1;
 }
 
-.landing-text h1 {
+header .landing-text h1 {
   font-size: 20rem;
   font-family: "the_historia_demo", sans-serif;
   padding: 1rem;
@@ -194,33 +207,42 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
-.landing-text h6 {
+header .landing-text h6 {
   font-size: 2rem;
   font-weight: 300;
   margin: 0;
+}
+
+header .button-up {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  background-color: #eee;
+  bottom: 2.5rem;
+  border-radius: 100%;
+  border: none;
+  right: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1000;
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+  cursor: pointer;
+}
+
+header .button-up i {
+  color: #16162d;
+  font-size: 2rem;
+  margin: auto;
 }
 
 .about {
   width: 100%;
 }
 
-.about .container .about-details-heading {
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 0;
+.about .container .section-heading {
   margin-bottom: 6rem;
-}
-
-.about .container .about-details-heading h1 {
-  font-size: 10rem;
-  opacity: 0.3;
-  margin-bottom: 0;
-}
-
-.about .container .about-details-heading h6 {
-  font-size: 2rem;
-  font-weight: 300;
-  margin: 0;
 }
 
 .about .container .about-details h2 {
@@ -256,7 +278,7 @@ header {
   color: #4267b2;
 }
 
-.skills .container .my-skills {
+.skills .my-skills {
   margin-top: 10rem;
   display: -ms-grid;
   display: grid;
@@ -266,14 +288,14 @@ header {
   text-align: center;
 }
 
-.skills .container .my-skills span {
+.skills .my-skills span {
   font-size: 1.8rem;
   font-weight: 300;
   text-align: left;
   margin-bottom: 1rem;
 }
 
-.skills .container .my-skills-skill {
+.skills .my-skills-skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,13 +312,13 @@ header {
   padding: 2rem;
 }
 
-.skills .container .my-skills-skill h2 {
+.skills .my-skills-skill h2 {
   margin: 2rem -2px 2rem 0;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.skills .container .my-skills-skill-icon {
+.skills .my-skills-skill-icon {
   width: 10rem;
   height: 10rem;
   border: 3px solid #ffe838;
@@ -311,7 +333,7 @@ header {
       align-self: center;
 }
 
-.skills .container .my-skills-skill-icon i {
+.skills .my-skills-skill-icon i {
   color: #ffe838;
   font-size: 5rem;
   margin: auto;
@@ -319,13 +341,13 @@ header {
           transform: rotate(-45deg);
 }
 
-.skills .container .my-skills-skill h6 {
+.skills .my-skills-skill h6 {
   margin: 1rem 0 0.8rem 0;
   font-size: 1.8rem;
   font-weight: 400;
 }
 
-.skills .container .my-skills-skill ul {
+.skills .my-skills-skill ul {
   padding-left: 1.6rem;
   list-style: initial;
 }
@@ -379,6 +401,25 @@ header {
   font-size: 1.6rem;
   font-weight: 300;
   margin-top: 0;
+}
+
+.nav-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list li {
+  margin: 0 2rem;
 }
 
 .has-margin-right {
@@ -437,15 +478,17 @@ header {
 
 .contact {
   height: 100vh;
+  position: relative;
 }
 
 .contact .container {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .contact .container .icons {
   font-size: 3rem;
   font-weight: 300;
+  padding: 0;
 }
 
 .contact .container .icons li {
@@ -463,5 +506,80 @@ header {
 
 .contact .container .icons li a i {
   margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: url("../img/sitebg2.jpg") no-repeat center fixed;
+  }
+  .section-heading h1 {
+    font-size: 3rem;
+  }
+  header .landing-text h1 {
+    font-size: 15rem;
+  }
+  header .landing-text h6 {
+    font-size: 1.7rem;
+  }
+  header .nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .nav-list li {
+    margin: 2rem 0;
+  }
+  header .nav-list-link {
+    font-size: 4.5rem;
+  }
+  .skills .my-skills-skill-icon {
+    width: 7rem;
+    height: 7rem;
+  }
+  .skills .my-skills-skill-icon i {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .menu-toggler {
+    top: 2rem;
+    right: 2rem;
+  }
+  header .landing-text h1 {
+    font-size: 8rem;
+  }
+  header .landing-text h6 {
+    font-size: 1.4rem;
+  }
+  header .nav-list-link {
+    font-size: 3.5rem;
+  }
+  .portfolio-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio-item-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .portfolio-item-links a {
+    margin-right: 0;
+  }
+  .portfolio-img {
+    margin: 0 0 2rem 0;
+  }
+  .portfolio-description {
+    margin: 0;
+  }
+  .portfolio-description h3 {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
