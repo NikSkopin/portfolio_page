@@ -1,4 +1,3 @@
 node_modules
 *.txt
-main_copy.js
-scss_copy
+package-lock.json
