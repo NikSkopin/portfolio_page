@@ -1,46 +1,51 @@
-/* Smooth scroll */
+const toggler = document.querySelector('.menu-toggler')
+const topNav = document.querySelector('.top-nav')
+const navLinks = document.querySelectorAll('.nav-list-link')
+const buttonUp = document.querySelector('.button-up')
 
-$('.menu-nav a').on('click', function(e) {
-  if (this.hash !== '') {
-    e.preventDefault();
-
-    const hash = this.hash;
-
-    $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top
-      },
-      800
-    );
-  }
-});
-
-//Navigation menu
-
-function openNav() {
-  document.querySelector('.overlay').style.height = '100%';
-}
-
-function closeNav() {
-  const x = window.matchMedia('(max-width: 968px)');
-  if (x.matches) {
-    document.querySelector('.overlay').style.height = '0%';
+// open and close navigation
+function toggleNav(e) {
+  if (e.target === toggler || e.target.classList.contains('bar')) {
+    toggler.classList.toggle('open')
+    topNav.classList.toggle('open')
+  } else {
+    toggler.classList.remove('open')
+    topNav.classList.remove('open')
   }
 }
 
-/* Work section details toggle */
-
-const acc = document.getElementsByClassName('details-accordion');
-
-for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function() {
-    this.classList.toggle('active-details');
-
-    const panel = this.nextElementSibling;
-    if (panel.style.display === 'block') {
-      panel.style.display = 'none';
-    } else {
-      panel.style.display = 'block';
-    }
-  });
+//smooth scroll
+function goScroll(e) {
+  e.preventDefault()
+  if (
+    e.target.classList.contains('button-up') ||
+    e.target.classList.contains('fa-chevron-up')
+  ) {
+    document.body.scrollTo({ top: 0, behavior: 'smooth' })
+    document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+    toggleNav(e)
+  } else {
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
 }
+
+//disblay up button when scroll from top
+window.onscroll = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    buttonUp.style.display = 'block'
+  } else {
+    buttonUp.style.display = 'none'
+  }
+}
+
+toggler.addEventListener('click', toggleNav)
+
+topNav.addEventListener('click', toggleNav)
+
+navLinks.forEach(link => {
+  link.addEventListener('click', goScroll)
+})
+
+buttonUp.addEventListener('click', goScroll)
