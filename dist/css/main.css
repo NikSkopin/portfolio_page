@@ -512,9 +512,6 @@ header .button-up i {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    background: url("../img/sitebg2.jpg") no-repeat center fixed;
-  }
   .section-heading h1 {
     font-size: 3rem;
   }
