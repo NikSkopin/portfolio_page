@@ -70,6 +70,10 @@
         font-size: 3.5rem;
       }
     }
+
+    .button-up {
+      right: 2rem;
+    }
   }
 
   .portfolio {
@@ -87,9 +91,11 @@
     }
     &-img {
       margin: 0 0 2rem 0;
+      order: 1;
     }
     &-description {
       margin: 0;
+      order: 2;
       h3 {
         text-align: center;
       }

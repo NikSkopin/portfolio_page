@@ -13,7 +13,7 @@ header {
     background-color: $nav-color;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
-    transition: all 650ms cubic-bezier(1, 0, 0, 1);
+    transition: all 350ms cubic-bezier(1, 0, 0, 1);
 
     &.open {
       top: 0;
@@ -45,7 +45,7 @@ header {
     justify-content: space-between;
     cursor: pointer;
     z-index: 1500;
-    transition: transform 650ms ease-out;
+    transition: transform 450ms ease-out;
 
     &.open {
       transform: rotate(-45deg);
@@ -115,7 +115,7 @@ header {
     border-radius: 100%;
     border: none;
     right: 5rem;
-    display: flex;
+    display: none;
     z-index: 1000;
     animation: pulse 2s infinite;
     cursor: pointer;

@@ -7,6 +7,7 @@ html {
   font-size: 0.625rem;
   font-family: "Roboto", sans-serif;
   color: #eee;
+  overflow-x: hidden;
 }
 
 body {
@@ -85,8 +86,8 @@ header .top-nav {
   background-color: #16162d;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
-  -webkit-transition: all 650ms cubic-bezier(1, 0, 0, 1);
-  transition: all 650ms cubic-bezier(1, 0, 0, 1);
+  -webkit-transition: all 350ms cubic-bezier(1, 0, 0, 1);
+  transition: all 350ms cubic-bezier(1, 0, 0, 1);
 }
 
 header .top-nav.open {
@@ -127,10 +128,10 @@ header .menu-toggler {
           justify-content: space-between;
   cursor: pointer;
   z-index: 1500;
-  -webkit-transition: -webkit-transform 650ms ease-out;
-  transition: -webkit-transform 650ms ease-out;
-  transition: transform 650ms ease-out;
-  transition: transform 650ms ease-out, -webkit-transform 650ms ease-out;
+  -webkit-transition: -webkit-transform 450ms ease-out;
+  transition: -webkit-transform 450ms ease-out;
+  transition: transform 450ms ease-out;
+  transition: transform 450ms ease-out, -webkit-transform 450ms ease-out;
 }
 
 header .menu-toggler.open {
@@ -222,9 +223,7 @@ header .button-up {
   border-radius: 100%;
   border: none;
   right: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   z-index: 1000;
   -webkit-animation: pulse 2s infinite;
           animation: pulse 2s infinite;
@@ -426,6 +425,10 @@ header .button-up i {
   margin-right: 5rem;
 }
 
+.portfolio {
+  width: 100%;
+}
+
 .portfolio-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,6 +559,9 @@ header .button-up i {
   header .nav-list-link {
     font-size: 3.5rem;
   }
+  header .button-up {
+    right: 2rem;
+  }
   .portfolio-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -574,9 +580,15 @@ header .button-up i {
   }
   .portfolio-img {
     margin: 0 0 2rem 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .portfolio-description {
     margin: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .portfolio-description h3 {
     text-align: center;

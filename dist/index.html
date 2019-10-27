@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="menu-toggler">
         <div class="bar half start"></div>
         <div class="bar"></div>
@@ -41,7 +41,7 @@
 
       <nav class="top-nav">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-list-link">Home</a></li>
+          <li><a href="#header" class="nav-list-link">Home</a></li>
           <li><a href="#about" class="nav-list-link">About</a></li>
           <li><a href="#skills" class="nav-list-link">My Skills</a></li>
           <li><a href="#portfolio" class="nav-list-link">Portfolio</a></li>
@@ -67,8 +67,8 @@
         </div> -->
         <div class="about-details">
           <div class="section-heading">
-            <h1>About</h1>
-            <h6>Myself</h6>
+            <h1 data-aos="fade-right" data-aos-delay="100">About</h1>
+            <h6 data-aos="fade-left" data-aos-delay="100">Myself</h6>
           </div>
 
           <h2>Personal information</h2>
@@ -133,12 +133,12 @@
     <section class="skills" id="skills">
       <div class="container">
         <div class="section-heading">
-          <h1>My Skills</h1>
-          <h6>Check what I know</h6>
+          <h1 data-aos="fade-right" data-aos-delay="100">My Skills</h1>
+          <h6 data-aos="fade-left" data-aos-delay="100">Check what I know</h6>
         </div>
 
         <ul class="my-skills">
-          <li class="my-skills-skill">
+          <li class="my-skills-skill" data-aos="fade-in" data-aos-delay="300">
             <div class="my-skills-skill-icon">
               <i class="fas fa-code"></i>
             </div>
@@ -151,7 +151,7 @@
               desktop first approaches;
             </span>
           </li>
-          <li class="my-skills-skill">
+          <li class="my-skills-skill" data-aos="fade-in" data-aos-delay="300">
             <div class="my-skills-skill-icon">
               <i class="fab fa-js"></i>
             </div>
@@ -163,7 +163,7 @@
               delegation. ES6 syntax.
             </span>
           </li>
-          <li class="my-skills-skill">
+          <li class="my-skills-skill" data-aos="fade-in" data-aos-delay="300">
             <div class="my-skills-skill-icon">
               <i class="fas fa-layer-group"></i>
             </div>
@@ -174,7 +174,7 @@
               Photoshop, GIMP.
             </span>
           </li>
-          <li class="my-skills-skill">
+          <li class="my-skills-skill" data-aos="fade-in" data-aos-delay="300">
             <div class="my-skills-skill-icon">
               <i class="fas fa-user-tie"></i>
             </div>
@@ -200,15 +200,25 @@
     <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="section-heading">
-          <h1>Portfolio</h1>
-          <h6>Check some of my recent work</h6>
+          <h1 data-aos="fade-right" data-aos-delay="100">Portfolio</h1>
+          <h6 data-aos="fade-left" data-aos-delay="100">
+            Check some of my recent work
+          </h6>
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-img has-margin-right">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <img src="img/works/shopping-cart.png" alt="project image" />
           </div>
-          <div class="portfolio-description">
+          <div
+            class="portfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
             <h3>Vue.js shopping cart training project</h3>
             <p>This is my first project using Vue.js and Vuex.</p>
             <div class="portfolio-item-links">
@@ -227,7 +237,11 @@
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-description has-margin-right">
+          <div
+            class="portfolio-description has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <h3>CBD shopping training project</h3>
             <p>
               This is a responsive training project I have done using mostly
@@ -235,41 +249,65 @@
               several elements written in vanilla JS, without using JQuery or
               other plugins. All scripts were written by myself.
             </p>
-            <a href="https://nikskopin.github.io/CBD_shopping/" target="_blank"
-              >Open project</a
-            >
-            <a href="https://github.com/NikSkopin/CBD_shopping" target="_blank"
-              >Open source code</a
-            >
+            <div class="portfolio-item-links">
+              <a
+                href="https://nikskopin.github.io/CBD_shopping/"
+                target="_blank"
+                >Open project</a
+              >
+              <a
+                href="https://github.com/NikSkopin/CBD_shopping"
+                target="_blank"
+                >Open source code</a
+              >
+            </div>
           </div>
           <!-- FIXME: if it is flex, just use flex to change order -->
-          <div class="portfolio-img">
+          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="400">
             <img src="img/works/work-cbd.png" alt="project image" />
           </div>
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-img has-margin-right">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <img src="img/works/work-blueasy.png" alt="project image" />
           </div>
-          <div class="portfolio-description">
+          <div
+            class="portfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
             <h3>BLUEASY training project</h3>
             <p>
               This one is a project where I focused on the CSS-grid. There are
               no scripts or complicated markup and styling. The site is
               responsive.
             </p>
-            <a href="https://nikskopin.github.io/blueasy_grid/" target="_blank"
-              >Open project</a
-            >
-            <a href="https://github.com/NikSkopin/blueasy_grid" target="_blank"
-              >Open source code</a
-            >
+            <div class="portfolio-item-links">
+              <a
+                href="https://nikskopin.github.io/blueasy_grid/"
+                target="_blank"
+                >Open project</a
+              >
+              <a
+                href="https://github.com/NikSkopin/blueasy_grid"
+                target="_blank"
+                >Open source code</a
+              >
+            </div>
           </div>
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-description has-margin-right">
+          <div
+            class="portfolio-description has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <h3>Design agency training project</h3>
             <p>
               This project was built using flexbox and a little bit of CSS-grid.
@@ -277,47 +315,64 @@
               non-standart elements. Here I started to use Sass. The site is
               responsive.
             </p>
-            <a href="http://nikskopin.github.io/design_agency" target="_blank"
-              >Open project</a
-            >
-            <a href="https://github.com/NikSkopin/design_agency" target="_blank"
-              >Open source code</a
-            >
+            <div class="portfolio-item-links">
+              <a href="http://nikskopin.github.io/design_agency" target="_blank"
+                >Open project</a
+              >
+              <a
+                href="https://github.com/NikSkopin/design_agency"
+                target="_blank"
+                >Open source code</a
+              >
+            </div>
           </div>
-          <div class="portfolio-img ">
+          <div class="portfolio-img " data-aos="fade-left" data-aos-delay="400">
             <img src="img/works/work-helali.png" alt="project image" />
           </div>
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-img has-margin-right">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <img src="img/works/work-snow.png" alt="project image" />
           </div>
-          <div class="portfolio-description">
+          <div
+            class="portfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
             <h3>Web-page for a snowboarding school</h3>
             <p>
               Training project. Quite simple web-page where I implemented HTML5,
               CSS, a bit of JavaScript. Learned to embed Google maps into
               web-page. Responsive.
             </p>
-            <a
-              href="http://nikskopin.github.io/Snowboarding_school"
-              target="_blank"
-              >Open project</a
-            >
-            <a
-              href="https://github.com/NikSkopin/Snowboarding_school"
-              target="_blank"
-              >Open source code</a
-            >
+            <div class="portfolio-item-links">
+              <a
+                href="http://nikskopin.github.io/Snowboarding_school"
+                target="_blank"
+                >Open project</a
+              >
+              <a
+                href="https://github.com/NikSkopin/Snowboarding_school"
+                target="_blank"
+                >Open source code</a
+              >
+            </div>
           </div>
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-description has-margin-right">
+          <div
+            class="portfolio-description has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <h3>
-              Reading Tracker. Fullstack Vue.js and Express.js application. In
-              progress...
+              Reading Tracker. Fullstack Vue.js and Express.js application.
             </h3>
             <p>
               My current project. This is a fullstack Vue (including vue-router,
@@ -329,13 +384,15 @@
             <!-- <a href="#" target="_blank"
               >Open project</a
             > -->
-            <a
-              href="https://github.com/NikSkopin/reading-tracker"
-              target="_blank"
-              >Open source code</a
-            >
+            <div class="portfolio-item-links">
+              <a
+                href="https://github.com/NikSkopin/reading-tracker"
+                target="_blank"
+                >Open source code</a
+              >
+            </div>
           </div>
-          <div class="portfolio-img">
+          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="400">
             <img src="img/works/reading-tracker.png" alt="project image" />
           </div>
         </div>
@@ -345,10 +402,12 @@
     <footer class="contact" id="contact">
       <div class="container">
         <div class="section-heading">
-          <h1>Contact Me</h1>
-          <h6>This is how you can reach me...</h6>
+          <h1 data-aos="fade-right" data-aos-delay="100">Contact Me</h1>
+          <h6 data-aos="fade-left" data-aos-delay="100">
+            This is how you can reach me...
+          </h6>
         </div>
-        <ul class="icons">
+        <ul class="icons" data-aos="fade-down" data-aos-delay="200">
           <li>
             <a href="mailto:skopin.n@gmail.com">
               <i class="fas fa-envelope"></i>mailto: skopin.n@gmail.com
@@ -371,7 +430,15 @@
       </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      //TODO: move this into js file
+      AOS.init({
+        easing: 'ease',
+        duration: 1800,
+        once: true
+      })
+    </script>
   </body>
 </html>
