@@ -145,11 +145,7 @@
             <h2>HTML & CSS</h2>
             <!-- TODO: may be not spans -->
             <span> HTML and HTML5 semantic tags;</span>
-            <span
-              >CSS and CSS3: block model, positioning, float, flexbox, CSS grid,
-              selectors, inheritance; responsive design, mobile first and
-              desktop first approaches;
-            </span>
+            <span>CSS and CSS3: flexbox, CSS grid, responsive design; </span>
           </li>
           <li class="my-skills-skill" data-aos="fade-in" data-aos-delay="300">
             <div class="my-skills-skill-icon">
@@ -169,8 +165,9 @@
             </div>
             <h2>Other skills and tools</h2>
             <span>
-              Git, NPM, Webpack, Sass; Vue.js and VUEX, Bootstrap4; basic
-              knowledge of React, node.js and Express; Linux, Avocode, Adobe
+              Git, NPM/Yarn, Webpack, Sass; Vue.js and VUEX, CSS frameworks
+              (Bootstrap, Bulma, Vuetify, Semantic UI); basic knowledge of
+              React, Express, Python, databases; Linux, Avocode, Adobe
               Photoshop, GIMP.
             </span>
           </li>
@@ -183,7 +180,6 @@
               Self Management, Self Motivation, Teamwork, Ability to work in
               stressfull situations, Patience. <br />
 
-              <!-- TODO: check if I can separate it and kind of accent it -->
               <h6>Languages:</h6>
               <ul>
                 <li>Russian (native speaker)</li>
@@ -212,12 +208,41 @@
             data-aos="fade-right"
             data-aos-delay="200"
           >
-            <img src="img/works/shopping-cart.png" alt="project image" />
+            <img src="img/works/reading-tracker.png" alt="project image" />
           </div>
+
           <div
-            class="portfolio-description"
+            class="portfolio-description has-margin-right"
             data-aos="fade-left"
             data-aos-delay="400"
+          >
+            <h3>
+              Reading Tracker. Fullstack Vue.js and Express.js application.
+            </h3>
+            <p>
+              This is a fullstack Vue (including vue-router, vuex), Express and
+              MySQL application. I also used Google Books API, Vuetify, lodash.
+              It is not deployed yet. If you want to check out how it works, you
+              can follow the instructions in the readme file.
+            </p>
+            <!-- <a href="#" target="_blank"
+              >Open project</a
+            > -->
+            <div class="portfolio-item-links">
+              <a
+                href="https://github.com/NikSkopin/reading-tracker"
+                target="_blank"
+                >Open source code</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div
+            class="portfolio-description"
+            data-aos="fade-right"
+            data-aos-delay="200"
           >
             <h3>Vue.js shopping cart training project</h3>
             <p>This is my first project using Vue.js and Vuex.</p>
@@ -231,6 +256,48 @@
                 href="https://github.com/NikSkopin/shopping_cart"
                 target="_blank"
                 >Open source code</a
+              >
+            </div>
+          </div>
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
+            <img src="img/works/shopping-cart.png" alt="project image" />
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <img src="img/works/upload-vue.png" alt="project image" />
+          </div>
+          <div
+            class="portfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
+            <h3>Vue.js and Express.js image uploading application</h3>
+            <p>
+              This is a small fullstack application for uploading images with
+              client side and server side verification. It can be integrated
+              into a big project.
+            </p>
+            <div class="portfolio-item-links">
+              <a
+                href="https://murmuring-atoll-44681.herokuapp.com/"
+                target="_blank"
+                >Open project</a
+              >
+              <a href="https://github.com/NikSkopin/upload-vue" target="_blank"
+                >Open client source code</a
+              >
+              <a href="https://github.com/NikSkopin/upload-api" target="_blank"
+                >Open server source code</a
               >
             </div>
           </div>
@@ -262,7 +329,6 @@
               >
             </div>
           </div>
-          <!-- FIXME: if it is flex, just use flex to change order -->
           <div class="portfolio-img" data-aos="fade-left" data-aos-delay="400">
             <img src="img/works/work-cbd.png" alt="project image" />
           </div>
@@ -364,38 +430,6 @@
             </div>
           </div>
         </div>
-
-        <div class="portfolio-item">
-          <div
-            class="portfolio-description has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          >
-            <h3>
-              Reading Tracker. Fullstack Vue.js and Express.js application.
-            </h3>
-            <p>
-              My current project. This is a fullstack Vue (including vue-router,
-              vuex), Express and MySQL application. I also used Google Books
-              API, Vuetify, lodash. It is almost done, but not deployed yet. If
-              you want to check out how it works, you can follow the
-              instructions in the readme file.
-            </p>
-            <!-- <a href="#" target="_blank"
-              >Open project</a
-            > -->
-            <div class="portfolio-item-links">
-              <a
-                href="https://github.com/NikSkopin/reading-tracker"
-                target="_blank"
-                >Open source code</a
-              >
-            </div>
-          </div>
-          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="400">
-            <img src="img/works/reading-tracker.png" alt="project image" />
-          </div>
-        </div>
       </div>
     </section>
 
@@ -435,10 +469,10 @@
     <script>
       //TODO: move this into js file
       AOS.init({
-        easing: 'ease',
+        easing: "ease",
         duration: 1800,
         once: true
-      })
+      });
     </script>
   </body>
 </html>
